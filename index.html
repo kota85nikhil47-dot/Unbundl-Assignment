@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unbundl — Landing Page</title>
+  <meta name="description" content="Sample responsive landing page built with HTML, CSS and vanilla JavaScript." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header role="banner" aria-label="Main header">
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <div class="logo">UN</div>
+        <div>
+          <h1>Unbundl</h1>
+          <p class="muted small">Launch faster — ship smarter</p>
+        </div>
+      </div>
+
+      <nav aria-label="Main navigation">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
+          <svg width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+
+        <ul id="navList">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#services">How it works</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="cta" href="#contact">Get started</a>
+    </div>
+
+    <div id="mobileNavPanel">
+      <div class="container mobile-links">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#services">How it works</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="hero">
+      <div class="hero-copy">
+        <h2>Ship polished landing pages — faster than ever.</h2>
+        <p class="lead">Unbundl gives product teams a simple, reusable UI kit to build pages quickly and efficiently.</p>
+
+        <div class="hero-actions">
+          <a class="primary-btn" href="#features">See features</a>
+          <a class="secondary-btn" href="#contact">Talk to sales</a>
+        </div>
+
+        <p class="trust muted">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 2v6"/><path d="M6 12h12"/></svg>
+          Trusted by 6000+ teams worldwide
+        </p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="card-slab demo-card">
+          <strong>Live demo</strong>
+          <p class="muted small">Preview of the landing page</p>
+        </div>
+
+        <div class="small-stats">
+          <div class="card-slab stat"><strong>120ms</strong><p class="muted small">Avg load</p></div>
+          <div class="card-slab stat"><strong>99%</strong><p class="muted small">Retention</p></div>
+          <div class="card-slab stat"><strong>SaaS</strong><p class="muted small">Top category</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="container">
+      <h3 class="section-title">Core features</h3>
+      <p class="lead">Everything you need to build high-converting landing pages fast.</p>
+
+      <div class="features-grid">
+        <div class="feature">
+          <div class="icon">⚙️</div>
+          <div>
+            <h4>Reusable components</h4>
+            <p class="muted small">Mix-and-match UI blocks for any layout.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="icon">⚡</div>
+          <div>
+            <h4>Performance</h4>
+            <p class="muted small">Lightweight and SEO-friendly.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="icon">🎯</div>
+          <div>
+            <h4>Conversion optimized</h4>
+            <p class="muted small">Patterns proven to increase sign-ups.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / HOW IT WORKS -->
+    <section id="services" class="container">
+      <h3 class="section-title">How it works</h3>
+      <p class="lead">Three simple steps to launch your next landing page.</p>
+
+      <div class="service">
+        <div class="service-media"></div>
+
+        <div class="steps">
+          <div class="step"><div class="num">1</div><div><strong>Choose sections</strong><p class="muted small">Pick the layout parts you need.</p></div></div>
+          <div class="step"><div class="num">2</div><div><strong>Customize</strong><p class="muted small">Edit copy, colors, visuals.</p></div></div>
+          <div class="step"><div class="num">3</div><div><strong>Deploy</strong><p class="muted small">Publish instantly.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="container">
+      <h3 class="section-title">What customers say</h3>
+      <p class="lead">Loved by product teams everywhere.</p>
+
+      <div class="testimonials">
+        <div class="test-cards" id="testCards">
+          <div class="test" data-index="0"><div class="avatar">AL</div><p>“17% more signups in a week!”</p></div>
+          <div class="test" data-index="1" style="display:none"><div class="avatar">MB</div><p>“Super fast performance.”</p></div>
+          <div class="test" data-index="2" style="display:none"><div class="avatar">SR</div><p>“Cut design-dev handoff time.”</p></div>
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="secondary-btn" id="prevTest">Prev</button>
+          <button class="secondary-btn" id="nextTest">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container">
+      <h3 class="section-title">Get started</h3>
+      <p class="lead">Fill in your details to request a demo.</p>
+
+      <form id="contactForm" class="contact-form">
+        <label>Name<input name="name" required /></label>
+        <label>Email<input name="email" type="email" required /></label>
+        <label>Message<textarea name="message"></textarea></label>
+        <button type="submit" class="primary-btn">Request demo</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p class="muted small">© <span id="year"></span> Unbundl — All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
