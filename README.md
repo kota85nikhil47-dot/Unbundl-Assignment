@@ -15,7 +15,7 @@ Editor	Visual Studio Code
 Design Inspection	Figma (free)
 Version Control	Git & GitHub
 Deployment	GitHub Pages / Netlify / Vercel
-❌ Not Allowed	React, Tailwind, Bootstrap, jQuery, etc.
+
 📌 Features Implemented
 
 ✔ 6 sections from Figma
@@ -43,24 +43,6 @@ Testimonials
 Footer
 
 🧱 How to Run Locally
-
-Clone the repository
-
-git clone https://github.com/kota85nikhil47/your-repo.git
-
-
-Open the folder
-
-cd your-repo
-
-
-Open index.html in your browser
-
-# Option 1
-Double-click index.html
-
-# Option 2 (VS Code Live Server)
-Right-click → "Open with Live Server"
 
 🚀 Deployment Instructions (GitHub Pages)
 
